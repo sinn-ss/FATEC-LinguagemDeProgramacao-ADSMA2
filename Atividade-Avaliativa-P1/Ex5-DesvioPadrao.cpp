@@ -29,7 +29,7 @@ int main(void)
 	printf("-----------------------------------------------------------------\n\n");
     desvio_padrao = sqrt(VARIANCIA);
     coef_variacao = (desvio_padrao/MEDIA)*100;
-    printf("  Para Variância = %.2f, o desvio Padrão é igual a %.2f.\n\n", variancia, desvio_padrao);
-    printf("  Para média = %d, o Coeficiente de Variação é igual a %.2f%%. \n\n", media, coef_variacao);
+    printf("  Para Variância = %.2f, o desvio Padrão é igual a %.2f.\n\n", VARIANCIA, desvio_padrao);
+    printf("  Para média = %d, o Coeficiente de Variação é igual a %.2f%%. \n\n", MEDIA, coef_variacao);
     system("PAUSE");
 }    
