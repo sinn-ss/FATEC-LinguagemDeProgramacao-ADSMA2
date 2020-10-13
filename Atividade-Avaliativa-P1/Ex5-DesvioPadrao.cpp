@@ -12,8 +12,8 @@
 #include <stdlib.h>
 #include <locale.h>
 #include <math.h>
-#define variancia 23.5
-#define media 15
+#define VARIANCIA 23.5
+#define MEDIA 15
 
 int main(void)
 {
@@ -27,8 +27,8 @@ int main(void)
 	printf("-----------------------------------------------------------------\n");
 	printf("|          ##### DESVIO PADRÃO E COEF. DE VARIAÇÃO #####        |\n");
 	printf("-----------------------------------------------------------------\n\n");
-    desvio_padrao = sqrt(variancia);
-    coef_variacao = (desvio_padrao/media)*100;
+    desvio_padrao = sqrt(VARIANCIA);
+    coef_variacao = (desvio_padrao/MEDIA)*100;
     printf("  Para Variância = %.2f, o desvio Padrão é igual a %.2f.\n\n", variancia, desvio_padrao);
     printf("  Para média = %d, o Coeficiente de Variação é igual a %.2f%%. \n\n", media, coef_variacao);
     system("PAUSE");
