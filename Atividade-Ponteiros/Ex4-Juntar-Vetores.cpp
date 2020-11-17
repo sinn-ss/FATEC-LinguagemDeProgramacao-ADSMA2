@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include <time.h>
 
 int main(void)
 {
@@ -55,6 +56,7 @@ int main(void)
     // que o programa preencha os vetores com números inteiros, conforme pode ser lido no
     // início deste código. O enunciado foi copiado do PDF que contém os exercícios na atividade
     // do Microsoft Teams.
+    srand(time(NULL));
     for (contador = 0; contador < nA; contador++)
     {
         A[contador] = rand() % 100 + 1;
